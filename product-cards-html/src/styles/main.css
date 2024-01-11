@@ -1,0 +1,123 @@
+* {
+  font-family: "Kanit", sans-serif;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+a,
+main {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #e7e7e7;
+}
+
+.cards-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards > .card {
+  width: 230px;
+  height: 265px;
+  background-color: #4c5871;
+  border-radius: 15px;
+}
+
+.cards {
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bottom-colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  margin-top: 5px;
+}
+
+.bottom-name {
+  padding: 0 40px;
+}
+
+.bottom-name > p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(34, 34, 34);
+}
+
+.bottom-price {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-price > span {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(84, 84, 84);
+}
+
+.bottom-price > span:last-child {
+  cursor: pointer;
+}
+
+.card > .card__bottom {
+  width: 100%;
+  height: 130px;
+  background-color: white;
+  border-radius: 15px;
+
+  position: absolute;
+  bottom: -1px;
+}
+
+.cards > .card {
+  position: relative;
+  margin-top: 80px;
+}
+
+.card__top > img {
+  width: 200px;
+  height: 215px;
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  bottom: 120px;
+  z-index: 2;
+}
+
+.card__bottom {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  transition: all 200ms ease-in-out;
+}
+
+.card:hover > .card__bottom {
+  bottom: 2px;
+}
